@@ -5,10 +5,10 @@ def call(env)
     
     t = Time.new 
  
-    if t.hour < 12
-      resp.write "Good Morning!"
-    else
+    if t.hour >= 12
       resp.write "Good Afternoon!"
+    else
+      resp.write "Good Morning!"
     end
  
     resp.finish
