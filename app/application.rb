@@ -6,9 +6,9 @@ def call(env)
     t = Time.new 
 
     if t.hour >=12
-      resp.write "Afternoon!"
+      resp.write "Afternoon"
     else
-      resp.write "Good Morning!"
+      resp.write "Morning"
     end
  
     resp.finish
